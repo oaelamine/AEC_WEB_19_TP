@@ -1,0 +1,103 @@
+.contact-content {
+    float: left;
+    width: 85%;
+    height: auto;
+    padding: 20px;
+    box-shadow: 0 0 10px #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-content .contact {
+    max-width: 800px;
+    padding: 0 50px 50px 50px;
+    box-shadow: 0 2px 15px rgb(0 0 0 / 10%);
+}
+.contact-content .contact h2 {
+    width: 100%;
+    width: fit-content;
+    margin: 30px auto;
+    text-transform: capitalize;
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+.contact-content .contact input:focus,
+.contact-content .contact textarea:focus {
+    outline: none;
+}
+.contact-content .contact input,
+.contact-content .contact textarea {
+    font-size: 16px;
+    border-width: 2px;
+    font-family: cairo;
+    border-color: transparent transparent #007cc3 transparent;
+}
+.contact-content .contact input[placeholder],
+.contact-content .contact textarea[placeholder] {
+    text-transform: uppercase;
+}
+.contact-content .contact input[type="text"] {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    
+}
+.contact-content .contact input[type="tel"],
+.contact-content .contact input[type="email"] {
+    width: 48%;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+.contact-content .contact input[type="tel"] {
+    margin-right: calc(2% - 2px)
+}
+.contact-content .contact input[type="email"] {
+    margin-left: calc(2% - 2px)
+}
+.contact-content .contact textarea {
+    width: 100%;
+    padding: 15px;
+    resize: none;
+}
+.contact-content .contact input[type="submit"] {
+    display: block;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    background-color:#007cc3;
+    padding: 10px 0;
+    border: 1px solid #007cc3;
+    border-radius: 50px;
+    width: 100%;
+    margin-top: 20px;
+}
+.contact-content .contact input[type="submit"]:hover {
+    background-color: black;
+    border-color: black;
+}
+@media (max-width:767px) {
+    .contact-content .contact {
+        width: auto;
+        padding: 0;
+        box-shadow: none;
+    }
+    .contact-content .contact h2 {
+        font-size: 25px;
+    }
+    .contact-content .contact input,
+    .contact-content .contact textarea {
+        font-size: 14px;
+    }
+    .contact-content .contact input[type="tel"],
+    .contact-content .contact input[type="email"] {
+    width: 100%;
+    padding: 15px;
+    margin-left: 0;
+    margin-right: 0;
+
+}
+    .contact-content .contact input[type="submit"] {
+        padding: 8px 0;
+    }
+}
