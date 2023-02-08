@@ -13,6 +13,8 @@
 .detaill-content .art {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 .detaill-content .art img {
     width: 200px;
@@ -36,4 +38,16 @@
 }
 .detaill-content .fihche ul {
     margin: 5px 0 0 30px
+}
+@media (max-width:767px) {
+    .detaill-content h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+    .detaill-content .detaille {
+        margin-left: 10px;
+    }
+    .detaill-content .fihche {
+        margin-left: 10px;
+    }
 }

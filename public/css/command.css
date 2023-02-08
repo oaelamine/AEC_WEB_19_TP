@@ -29,6 +29,7 @@
 }
 .contact-content .contact .contact-form select[name="item"] {
     width: 80%;
+    background-color: white;
     margin: 20px 0 20px;
 }
 .contact-content .contact .contact-form input[type="number"] {
