@@ -1,0 +1,39 @@
+.detaill-content {
+    float: left;
+    width: 85%;
+    height: auto;
+    padding: 20px;
+    box-shadow: 0 0 10px #ddd;
+}
+.detaill-content h2 {
+    width: fit-content;
+    margin: 30px auto 60px;
+    text-transform: capitalize;
+}
+.detaill-content .art {
+    display: flex;
+    justify-content: space-around;
+}
+.detaill-content .art img {
+    width: 200px;
+    padding: 30px;
+    box-shadow: 0 2px 15px rgb(0 0 0 / 10%);
+}
+.detaill-content .detaille {
+    margin: 100px 0 0 50px;
+}
+.detaill-content .detaille  h3,
+.detaill-content .fihche h3{
+    text-transform: capitalize;
+    margin-bottom: 5px;
+}
+.detaill-content .detaille p {
+    margin: 5px 0 0 30px
+    
+}
+.detaill-content .fihche {
+    margin: 30px 0 50px 50px;
+}
+.detaill-content .fihche ul {
+    margin: 5px 0 0 30px
+}
