@@ -17,9 +17,11 @@
     gap: 20px;
 }
 .detaill-content .art img {
-    width: 200px;
+    width: auto;
+    height: 200px;
     padding: 30px;
     box-shadow: 0 2px 15px rgb(0 0 0 / 10%);
+    transition: 0.3s;
 }
 .detaill-content .detaille {
     margin: 100px 0 0 50px;
