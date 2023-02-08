@@ -1,0 +1,56 @@
+
+.contact-content .contact .contact-form form {
+    position: relative;
+}
+.contact-content .contact .contact-form input[name="adress"] {
+    padding-right: 30px;
+}
+.contact-content .contact .contact-form i {
+    position: absolute;
+    right: 10px;
+    bottom: 220px;
+    color: #007cc3;
+}
+.contact-content .contact .contact-form select[name="item"],
+.contact-content .contact .contact-form input[type="number"] {
+    border-width: 0 0 2PX 0;
+    border-style: solid;
+    border-color: transparent transparent  #007cc3;
+    padding: 15px;
+    font-family: cairo;
+    font-size: 16px;
+    color: #666666;
+}
+.contact-content .contact .contact-form select > option {
+    text-transform: uppercase;
+}
+.contact-content .contact .contact-form select:focus {
+    outline: none;
+}
+.contact-content .contact .contact-form select[name="item"] {
+    width: 80%;
+    margin: 20px 0 20px;
+}
+.contact-content .contact .contact-form input[type="number"] {
+    width: 15%;
+    margin: 20px 0 20px 4.4%;
+}
+
+@media (max-width:991px) {
+    .contact-content .contact .contact-form select[name="item"] {
+        width: 80%;
+    }
+    .contact-content .contact .contact-form input[type="number"] {
+        width: 15%;
+        margin-left: 4.3%;
+    }
+}
+@media (max-width:767px) {
+    .contact-content .contact .contact-form select[name="item"] {
+        width: 75%;
+    }
+    .contact-content .contact .contact-form input[type="number"] {
+        width: 20%;
+        margin-left: 3.6%;
+    }
+}

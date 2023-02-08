@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="public/css/main.css">
     <!-- contact STYLESHEET -->
     <link rel="stylesheet" href="public/css/contact.css">
+    <!-- command stylesheet -->
+    <link rel="stylesheet" href="public/css/command.css">
 </head>
 <body>
     <!-- START HRADER -->
@@ -24,9 +26,9 @@
     <nav>
         <ul class="navigation">
             <li><a href="index.html"><i class="fa-solid fa-house"></i><span>accueil</span></a></li>
-            <li><a href="articles.html"><i class="fa-solid fa-newspaper"></i><span>articles</span></a></li>
+            <li><a href="articles.html" target="_blank"><i class="fa-solid fa-cart-shopping"></i><span>articles</span></a></li>
             <li><a href="command.html" target="_blank"><i class="fa-solid fa-bag-shopping"></i><span>command</span></a></li>
-            <li><a href="contact.html"><i class="fa-solid fa-address-book"></i><span>contact</span></a></li>
+            <li><a href="contact.html" target="_blank"><i class="fa-solid fa-address-book"></i><span>contact</span></a></li>
             <li><a href="#"><i class="fa-solid fa-right-from-bracket"></i><span>log out</span></a></li>
         </ul>
     </nav>
@@ -34,15 +36,29 @@
     <!-- START CONTENT -->
     <div class="contact-content">
         <div class="contact">
-            <h2>contacter nous</h2>
+            <h2>commander un produit</h2>
             <div class="contact-form">
                 <form action="" method="post">
                     <input type="text" name="nom" id="nom" placeholder="Nom" required>
                     <input type="text" name="prenom" id="prenom" placeholder="Prenom" required>
                     <input type="tel" name="tel" id="tel" placeholder="Téléphone">
                     <input type="email" name="email" id="email" placeholder="Email" required>
-                    <textarea name="message" id="message" cols="30" rows="5" placeholder="Votre Message"></textarea>
-                    <input type="submit" value="Envoyez Votre Message">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <input type="text" name="adress" id="adresse" placeholder="adresse de livraison">
+                    <select name="item" id="item">
+                        <option value="" disabled selected>SÉLECTIONNER VOTRE ARTICLE</option>
+                        <option value="Carte Philips Micro SDXC 128 Go">Carte Philips Micro SDXC 128 Go</option>
+                        <option value="TP-Link Répéteur WiFi">TP-Link Répéteur WiFi</option>
+                        <option value="TP-Link Clé WiFi Puissante AC1300 Mbps">TP-Link Clé WiFi Puissante AC1300 Mbps</option>
+                        <option value="Samsung 870 QVO MZ-77Q1T0BW | Disque SSD Interne 1 To">Samsung Disque SSD Interne 1 To</option>
+                        <option value="VEGCOO 2.4G Wireless Gaming Mouse, 7 Buttons Computer Gaming">VEGCOO 2.4G Wireless Gaming Mouse</option>
+                        <option value="Corsair K70 RGB MK.2 Clavier Mécanique Gaming ">Corsair K70 RGB MK.2 Clavier Mécanique Gaming </option>
+                        <option value="Bluestork Clavier Sans Fil Bluetooth pour MacBook Pro">Bluestork Clavier Sans Fil pour MacBook Pro</option>
+                        <option value="SanDisk Extreme 1 To NVMe SSD, disque externe">SanDisk Extreme 1 To NVMe SSD, disque externe</option>
+                        <option value="Corsair Vengeance LPX 16Go (2x8Go) DDR4 3200MHz">Corsair Vengeance LPX 16Go (2x8Go) DDR4 3200MHz</option>
+                    </select>
+                    <input type="number" name="Quantité" id="Quantité" min="1" value="1">
+                    <input type="submit" value="valider ma commande">
                 </form>
             </div>
         </div>
